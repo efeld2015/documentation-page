@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<h1 id="title">Rename Our School</h1>
+
+<p id="description">
+  The students of General George Armstrong Custer High School have successfully petitioned to rename the school, citing it as offensive and no longer reflective of the values of the student body and community as a whole.
+  Complete the survey below to help us choose an inspiring, appropriate figure to name our school after.</p>
+
+<form id="survey-form">
+
+  <div class="form-group">
+
+    <label id="name-label" for="name">Name</label>
+
+    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+
+  </div>
+
+  <br>
+  <div class="form-group">
+
+    <label id="email-label" for="email">Email</label>
+
+    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+
+  </div>
+
+  <div class="form-group">
+
+    <br>
+
+    <label id="number-label" for="number">Age</label>
+
+    <input type="number" id="number" class="form-control" min="10" max="100" placeholder="Age">
+
+  </div>
+
+  <br>
+  <p id="question-1" class="text-center">Which option best describes your current role?</p>
+  <select id="dropdown">
+    <option>Current GCHS student
+    <option>GCHS employee
+    <option>Parent of current GCHS student
+    <option>Community member</option>
+  </select>
+
+<br>
+<br>
+
+  <p id="question-2" class="text-center"> Does the current school name make you feel uncomfortable, unwelcome, or cause you to feel any negative emotions?</p>
+
+<div class="radio">
+  <label id="label-1"><input type="radio" name="thing" value="opt1"></label>Yes
+
+ <label id="label-2"><input type="radio" name="thing" value="opt2"></label>No
+
+<label id="label-3"><input type="radio" name="thing" value="opt3"></label>Neutral
+
+</div>
+<hr>
+  <p id="question-3" class="text-center"> Choose one of the following notable South Dakotans as your choice for renaming GCHS.</p>
+
+<div class="radio">
+  <label id="radio-1"><input type="radio" name="doodad" value="opt-1"></label>Russell Means
+  <br>
+ <label id="radio-2"><input type="radio" name="doodad" value="opt-2"></label>Crazy Horse
+  <br>
+  <label id="radio-3"><input type="radio" name="doodad" value="opt-3"></label>Bob Barker
+  <br>
+  <label id="radio-4"><input type="radio" name="doodad" value="opt-4"></label>Rose Wilder Lane
+  <br>
+  <label id="radio-5"><input type="radio" name="doodad" value="opt-5"></label>Emily Graslie
+
+</div>
+<hr>
+
+<p>A new school name will necessitate a new school mascot (currently General George) and football team name (currently the Generals). Whatt?</p>
+  
+  <div class="checkbox">
+
+  <input type="checkbox" value="check-1">Nature/weather (e.g.the Tumbleweeds, the Storm)
+
+  <input type="checkbox" value="check-2">Animals (e.g. the Colts)
+  
+
+  <input type="checkbox" value="check-3">Tech (e.g. the Hackers)
+
+</div>
+<br>
+  Any comments, questions, or suggestions?
+  <textarea>
+    What's on your mind?
+</textarea>
+
+  <input type="submit" id="submit" name="submit" value="submit">
+
+</form>
+
+</html>
